@@ -99,5 +99,7 @@ button:hover {
     padding: 5px;
     font-size: 18px;
     color: black;
+    justify-content: center;
+    text-align: center;
     /* overflow: auto; */
 }
