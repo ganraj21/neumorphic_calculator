@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ecf0f3;
+    font-family: sans-serif;
+    /* overflow: hidden; */
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: #ecf0f3;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 12px 12px 20px #cbced1, -12px -12px 20px #ffffff;
+    display: grid;
+    grid-template-columns: repeat(4, 68px);
+}
+
+input {
+    grid-column: span 4;
+    height: 70px;
+    width: 260px;
+    background-color: #ecf0f3;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+    border: none;
+    border-radius: 30px;
+    color: rgb(70, 70, 70);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+button {
+    height: 48px;
+    width: 48px;
+    /* background-color: #c5e4fc; */
+    box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #ffffff;
+    transition: .1s;
+    border: none;
+    border-radius: 50%;
+    margin: 8px;
+    font-size: 16px;
+}
+
+button:hover {
+    box-shadow: inset 5px 5px 8px #00000020, inset -5px -5px 8px #fff;
+    background: #fff;
+}
+
+.equal {
+    width: 115px;
+    border-radius: 40px;
+    font-size: 21px;
+    background-color: #f79a06;
+    box-shadow: 5px 5px 8px #00000020, -5px -5px 8px #ffffff;
+    color: #fff;
+}
+
+.equal:hover {
+    width: 115px;
+    border-radius: 40px;
+    box-shadow: inset 5px 5px 8px #ffab24, inset 0px 0px 8px #f5ad39;
+    background: rgb(255, 145, 0);
+}
+
+.clear_button {
+    background: #33cc33;
+    color: #fff;
+}
+
+.clear_button:hover {
+    box-shadow: inset 5px 5px 8px #2eb82e, inset 2px 2px 8px #33cc33;
+    background: #33cc33;
+}
+
+.operator {
+    color: #ffab24;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.operator:hover {
+    color: #ff9e02;
+}
+
+.basic_footer span {
+    background-color: #9de2ee;
+    margin-bottom: 0px;
+    padding: 5px;
+    font-size: 18px;
+    color: black;
+    /* overflow: auto; */
+}
